@@ -1,10 +1,10 @@
-*{
+/* *{
     background: rgb(231, 229, 229);
-}
+} */
 
 .objectdiv {
-    width: 400px;
-    height: 300px;
+    width: 70%;
+    height: auto;
     background: hotpink;
     margin: 10% auto 5% 10%;
     text-align: center;
@@ -12,29 +12,40 @@
 
 .title {
     width: 90%;
-    background: yellow;
-    text-align: center;
-    margin: 5% auto;
+    /* background: yellow; */
+    text-align: left;
+    margin: 2% 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 
 .authur {
     width: 90%;
-    background: rgb(135, 51, 214);
-    text-align: center;
-    margin: 5% auto;
+    /* background: rgb(135, 51, 214); */
+    margin: 1% opx;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    text-align: left;
+
 }
 
 .body {
-    width: 90%;
+    width: 80%;
     height: 60%;
-    background: yellow;
+    /* background: yellow; */
     text-align: center;
     margin: 5% auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 20px;
+    line-height: 150%;
+}
+
+.seven {
+   /* background: lightseagreen; */
+    text-align: center;
+    font-size: 20px;
+    margin-right: 90%;
+    color: rgb(252, 255, 45);
+   
 }
