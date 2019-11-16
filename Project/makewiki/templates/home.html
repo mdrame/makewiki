@@ -9,6 +9,12 @@
      <body>
             <h1> Home </h1>
 
+            {%  for models in database %}
+            <h3> {{ models.title }} </h3>
+            <h3> {{ models.authur }} </h3>
+            <h3> {{ models.body }} </h3>
+            {% endfor %}
+
      </body>
 
 
