@@ -1,18 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-                Home | Make Wiki
-        </title>   
-     </head>
+        <title> Home </title>
+        <link rel="stylesheet"  type="text/css" href="{% static 'index.css' %}">
+    </head>
 
-     <body>
-            <h1> Home </h1>
+    <!-- indise -->
+    <body>
+        
 
             {%  for models in database %}
-            <h3> {{ models.title }} </h3>
-            <h3> {{ models.authur }} </h3>
-            <h3> {{ models.body }} </h3>
+            <div class="objectdiv">
+                <h3 class="title"> {{ models.title }} </h3>
+                <h3 class="authur"> {{ models.authur }} </h3>
+                <h3 class="body"> {{ models.summery }} </h3>
+                <a href="{% url 'detail' models.id  %}"> Read </a>
+            </div>
             {% endfor %}
 
      </body>

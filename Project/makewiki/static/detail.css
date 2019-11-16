@@ -1,0 +1,40 @@
+*{
+    background: rgb(231, 229, 229);
+}
+
+.objectdiv {
+    width: 400px;
+    height: 300px;
+    background: hotpink;
+    margin: 10% auto 5% 10%;
+    text-align: center;
+}
+
+.title {
+    width: 90%;
+    background: yellow;
+    text-align: center;
+    margin: 5% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+.authur {
+    width: 90%;
+    background: rgb(135, 51, 214);
+    text-align: center;
+    margin: 5% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.body {
+    width: 90%;
+    height: 60%;
+    background: yellow;
+    text-align: center;
+    margin: 5% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
