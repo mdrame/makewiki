@@ -26,7 +26,7 @@ class PostView(ListView):
   
 
 
-
+#Detail view clase base view 
 class DetailView(DetailView):
     model = Database
     template_name = 'detail.html'
@@ -34,17 +34,20 @@ class DetailView(DetailView):
     
 
 
-
+# register function route
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Account created for {username}!')
-            return redirect('home')
+            messages.success(request, f'Account created log in!')
+            return redirect('login')
     else:
         form = UserCreationForm()
     return render(request, "register.html", {'form': form})
 
 
+
+def profile(request):
+    return render(request, 'profile.html') 
