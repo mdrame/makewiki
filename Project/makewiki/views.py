@@ -4,6 +4,7 @@ from .models import Database
 from django.views.generic import ListView, DetailView
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
  
 
 # Create your views here.
@@ -48,6 +49,7 @@ def register(request):
     return render(request, "register.html", {'form': form})
 
 
-
+# decorator making sure user is log in to view profile page
+@login_required
 def profile(request):
     return render(request, 'profile.html') 
